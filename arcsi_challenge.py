@@ -3,7 +3,7 @@ import numpy as np
 
 valid_private_key = False
 while not valid_private_key:
-    base_key = '8a650c74f99596370fb8b7ac90875130996b432adf80e341dff13a7ec1fe0e34'
+    base_key = '0000000000000000000000000000000000000000000000000000000000000000'
     decoded_base_key = cryptos.decode_privkey(base_key, 'hex')
     shitty_random_number = np.random.randint(2**16-1, dtype=np.uint16)
     decoded_private_key = decoded_base_key + shitty_random_number
